@@ -12,4 +12,11 @@ expect(page.current_url).to eq project_url(project)
 title = "Sublime Text 3 - Projects - Ticketee"
 expect(page).to have_title title
 end
+scenario "when providing invalid attributes" do
+visit "/"
+click_link "New Project"
+click_button "Create Project"
+expect(page).to have_content "Project has not been created."
+expect(page).to have_content "Name can't be blank"
+end
 end

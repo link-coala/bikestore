@@ -1,4 +1,5 @@
 class Project < ApplicationRecord
+validates :name, presence: true
 def up
 create_table :projects do |t|
 t.string :name

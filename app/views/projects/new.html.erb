@@ -9,4 +9,10 @@
 <%= f.text_field :description %>
 </p>
 <%= f.submit %>
+<ul>
+<% @project.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+</div>
 <% end %>
