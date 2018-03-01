@@ -1,14 +1,8 @@
+<h1>Projects</h1>
 <%= link_to "New Project", new_project_path %>
-<h1>New Project</h1>
-<%= form_for Project.new do |f| %>
-    Name: <%= f.text_field :name %>
-  </p>
-  <p>
-  <p> 
-    Description: <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.submit 'New Project' %>
-  </p>
-  <p> 
+<div id="projects">
+<% @projects.each do |project| %>
+<h2><%= link_to project.name, project %></h2>
+<p><%= project.description %></p>
 <% end %>
+</div>
