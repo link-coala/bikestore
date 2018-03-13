@@ -17,4 +17,6 @@ description:
 bicicleta para pasear
 </p>},
 image_url: 'giant.jpg',
-price: 26.00)
+price: 26.00,
+rin: 7
+)

@@ -3,10 +3,15 @@
 <% @bikes.each do |bike| %>
 <div class="entry">
 <%= image_tag(bike.image_url) %>
+<h3>modelo:</h3>
 <h3><%= bike.model %></h3>
+<h3>descripcion:</h3>
 <%= sanitize(bike.description) %>
+<h3>precio:</h3>
 <div class="price_line">
 <span class="price"><%= bike.price %></span>
+<h3>rin:</h3>
+<h3><%= bike.rin %></h3>
 </div>
 </div>
 <% end %>
