@@ -11,3 +11,10 @@ end
     Project.create!(name: name, description: "A sample project about #{name}")
   end  
 end
+Bike.create(model: 'giant',
+description:
+%{<p>
+bicicleta para pasear
+</p>},
+image_url: 'giant.jpg',
+price: 26.00)

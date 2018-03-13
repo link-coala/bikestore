@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<h1>bike Catalog</h1>
+<% @bikes.each do |bike| %>
+<div class="entry">
+<%= image_tag(bike.image_url) %>
+<h3><%= bike.model %></h3>
+<%= sanitize(bike.description) %>
+<div class="price_line">
+<span class="price"><%= bike.price %></span>
+</div>
+</div>
+<% end %>

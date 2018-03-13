@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+root 'store#index', as: 'store_index'
+
+  resources :bikes
 namespace :admin do
 root 'application#index'
 resources :projects, only: [:new, :create, :destroy]
