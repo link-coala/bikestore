@@ -17,6 +17,24 @@ description:
 bicicleta para pasear
 </p>},
 image_url: 'giant.jpg',
-price: 26.00,
+price: 260.000,
+rin: 7
+)
+Bike.create(model: 'choper',
+description:
+%{<p>
+bicicleta choper
+</p>},
+image_url: 'chopper.jpg',
+price: 300.000,
+rin: 7
+)
+Bike.create(model: 'doble',
+description:
+%{<p>
+bicicleta para dos personas
+</p>},
+image_url: 'doble.jpeg',
+price: 300.000,
 rin: 7
 )
