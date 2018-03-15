@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 <h1>bike Catalog</h1>
-<% cache @products do %>
+<% cache @bikes do %>
 <% @bikes.each do |bike| %>
-<% cache product do %>
+<% cache bike do %>
 <div class="entry">
 <%= image_tag(bike.image_url) %>
 <h3>modelo:</h3>
@@ -11,7 +11,7 @@
 <%= sanitize(bike.description) %>
 <h3>precio:</h3>
 <div class="price_line">
-<span class="price"><%= number_to_currency(product.price) %></span>
+<span class="price"><%= number_to_currency(bike.price) %></span>
 <h2>rin:</h2>
 <span><%= bike.rin %></span>
 </div>
