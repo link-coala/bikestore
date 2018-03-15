@@ -61,3 +61,40 @@ margin-top: 20px;
 body {
 padding-top: 70px;
 }
+#columns {
+background: #141;
+display: flex;
+#main {
+padding: 1em;
+background: white;
+flex: 1;
+}
+#side {
+padding: 1em 2em;
+background: #141;
+ul {
+padding: 0;
+li {
+list-style: none;
+a {
+color: #bfb;
+font-size: small;
+}
+}
+}
+}
+}
+@media all and (max-width: 800px) {
+#columns {
+flex-direction: column-reverse;
+}
+}
+@media all and (max-width: 500px) {
+#banner {
+height: 1em;
+}
+#banner .title {
+display: none;
+}
+}
+footer { margin-top: 100px; }

@@ -17,7 +17,18 @@ Bikestore
   <body class="<%= controller.controller_name %>">
 <%= render 'layouts/navbar' %>
 
+<div id="columns">
+<div id="side">
+<ul>
+<li><a href="http://www....">Home</a></li>
+
+</ul>
+</div>
+<div id="main">
 <%= yield %>
 </div>
+</div>
+<%= render 'layouts/footer' %>
   </body>
+
 </html>
