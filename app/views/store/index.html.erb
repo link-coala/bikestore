@@ -9,7 +9,7 @@
 <%= sanitize(bike.description) %>
 <h3>precio:</h3>
 <div class="price_line">
-<span class="price"><%= bike.price %></span>
+<span class="price"><%= number_to_currency(product.price) %></span>
 <h2>rin:</h2>
 <span><%= bike.rin %></span>
 </div>
