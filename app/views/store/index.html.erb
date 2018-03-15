@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 <h1>bike Catalog</h1>
+<% cache @products do %>
 <% @bikes.each do |bike| %>
+<% cache product do %>
 <div class="entry">
 <%= image_tag(bike.image_url) %>
 <h3>modelo:</h3>
@@ -14,4 +16,6 @@
 <span><%= bike.rin %></span>
 </div>
 </div>
+<% end %>
+<% end %>
 <% end %>
