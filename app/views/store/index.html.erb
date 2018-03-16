@@ -12,6 +12,7 @@
 <h3>precio:</h3>
 <div class="price_line">
 <span class="price"><%= number_to_currency(bike.price) %></span>
+<%= button_to 'Add to Cart', line_items_path(bike_id: bike) %>
 <h2>rin:</h2>
 <span><%= bike.rin %></span>
 </div>
