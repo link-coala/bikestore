@@ -2,7 +2,7 @@
 <h2>Your Cart</h2>
 <ul>
 <% @cart.line_items.each do |item| %>
-<li><%= item.bike.model %></li>
+<li><%= item.quantity %> &times; <%= item.bike.model %></li>
 <% end %>
 </ul>
 <%= link_to 'Edit', edit_cart_path(@cart) %> |

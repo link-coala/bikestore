@@ -27,7 +27,7 @@ before_action :set_line_item, only: [:show, :edit, :update, :destroy]
   # POST /line_items.json
   def create
     bike = Bike.find(params[:bike_id])
-    @line_item = @cart.line_items.build(bike: bike)
+    @line_item = @cart.add_bike(bike)
 
     respond_to do |format|
       if @line_item.save
