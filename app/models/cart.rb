@@ -9,4 +9,7 @@ current_item = line_items.build(bike_id: bike.id)
 end
 current_item
 end
+def total_price
+line_items.to_a.sum { |item| item.total_price }
+end
 end

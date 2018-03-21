@@ -31,8 +31,7 @@ before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart,
-notice: 'Line item was successfully created.' }
+        format.html { redirect_to @line_item.cart }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
