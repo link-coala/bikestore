@@ -19,6 +19,11 @@ Bikestore
 
 <div id="columns">
 <div id="side">
+<div id="cart">
+<% if @cart %>
+<%= render @cart %>
+<% end %>
+</div>
 <ul>
 <li><a href="http://www....">Home</a></li>
 
