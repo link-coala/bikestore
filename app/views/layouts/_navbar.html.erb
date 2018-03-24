@@ -33,12 +33,7 @@ Signed in as <%= current_user.email %>
 </div>
 </div>
 </nav>
-<div class="container">
-<% flash.each do |key, message| %>
-<div class="alert alert-<%= key %>">
-<%= message %>
-</div>
-<% end %>
+
 <% if user_signed_in? %>
 <div class="navbar-right">
 <p class="navbar-text">
